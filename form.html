@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__inner">
+            <div class="page-header__logo">
+                <img src="" alt="">
+            </div>
+            <nav class="page-header__menu">
+                <ul class="page-header__list">
+                    <li class="page-header__item"><a href="index.html" class="page-header__link">Главная</a></li>
+                    <li class="page-header__item"><a href="catalog.html" class="page-header__link">Каталог продукции</a></li>
+                    <li class="page-header__item"><a href="form.html" class="page-header__link page-header__link--active">Подбор программы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="form">
+            <div class="form__inner">
+                <h1 class="form__heading">
+                    Подбор программы
+                </h1>
+                <p class="form__description">
+                    Заполните анкету и мы подберем программу питания для вашего кота
+                </p>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <div class="form__data data">
+                        <label class="data__label-name" for="name-field">Имя:</label>
+                        <input class="data__input-name" type="text" name="name" id="name-field" placeholder="Барсик">
+                        <label class="data__label-weight" for="weight-field">Вес (кг):*</label>
+                        <input class="data__input-weight" type="number" name="wieght" id="weight-field" placeholder="7">
+                        <label class="data__label-age" for="age-field">Возраст (лет)</label>
+                        <input class="data__input-age" type="number" name="age" id="age-field" placeholder="7">
+                    </div>
+                    <div class="form__type-of-diet diet">
+                        <input class="diet__radio-fit" type="radio" name="type-of-diet" id="fit-field" value="weight-reducing" checked>
+                        <label class="diet__label-fit" for="fit-field">Похудение</label>
+                        <input class="diet__radio-mass" type="radio" name="type-of-diet" value="mass-increasing" id="mass-field">
+                        <label class="diet__label-mass" for="mass-field">Набор массы</label>
+                        <input class="diet__radio-idk" type="radio" name="type-of-diet" value="i-dont-know" id="idk-field">
+                        <label class="diet__label-idk" for="idk-field">Не знаю (нужен ваш совет)</label>
+                    </div>
+                    <div class="form__contacts contacts">
+                        <h2 class="contacts__heading">
+                            Контактные данные (владельца кота)
+                        </h2>
+                        <label class="contacts__label-email" for="email-field">E-mail:*</label>
+                        <input class="contacts__input-email" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+                        <label class="contacts__label-phone" for="phone-field">Телефон:*</label>
+                        <input class="contacts__input-phone" type="number" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
+                    </div>
+                    <div class="form__extra extra">
+                        <h2 class="extra__heading">
+                            Дополнительно
+                        </h2>
+                        <input class="extra__check-sweetener" type="checkbox" name="sweetener" id="sweetener-field" checked>
+                        <label class="extra__label-sweetener" for="sweetener-field">Сахарозаменитель</label>
+                        <input class="extra__check-water" type="checkbox" name="water" id="water-field">
+                        <label class="extra__label-water" for="water-field">Питьевая вода</label>
+                        <input class="extra__check-milk" type="checkbox" name="milk" id="milk-field">
+                        <label class="extra__label-milk" for="milk-field">Молоко</label>
+                        <input class="extra__check-vitamins" type="checkbox" name="vitamins" id="vitamins-field">
+                        <label class="extra__label-vitamins" for="vitamins-field">Витамины</label>
+                    </div>
+                    <div class="form__btn btn-block">
+                        <button class="btn-block__button" type="submit">Отправить заявку</button>
+                        <p class="btn-block__description">* &#x2012; Обязательные поля</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="page-footer">
+        <div class="page-footer__inner">
+            <div class="page-footer__logo">
+            </div>
+            <div class="page-footer__social-wrapper">
+                <ul class="page-footer__list">
+                    <li class="page-footer__item">
+                        <a href="#" class="page-footer__link">vk</a>
+                    </li>
+                    <li class="page-footer__item">
+                        <a href="#" class="page-footer__link">ig</a>
+                    </li>
+                    <li class="page-footer__item">
+                        <a href="#" class="page-footer__link">fb</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__developer-wrapper">
+                <a href="#" class="page-footer__developer-link">HTML Academy</a>
+                <a href="#" class="page-footer__developer-logo"><img src="" alt="Логотип HTML-Academy"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
