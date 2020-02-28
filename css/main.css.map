@@ -1,0 +1,29 @@
+{
+    "version": 3,
+    "mappings": "AAqBA,AAAA,IAAI,CAAC;EACD,gBAAgB,ECtBP,OAAO;CDuBnB",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/_variables.scss",
+        "../scss/_page-header.scss",
+        "../scss/_main-menu.scss",
+        "../scss/_poster.scss",
+        "../scss/_button.scss",
+        "../scss/_nutrition.scss",
+        "../scss/_process.scss",
+        "../scss/_example.scss",
+        "../scss/_contacts.scss",
+        "../scss/_page-footer.scss",
+        "../scss/_catalog.scss",
+        "../scss/_product-card.scss",
+        "../scss/_additional-goods.scss",
+        "../scss/_special-offer.scss",
+        "../scss/_form.scss",
+        "../scss/_user-data.scss",
+        "../scss/_diet.scss",
+        "../scss/_contacts.scss",
+        "../scss/_extra-options.scss",
+        "../scss/_btn-block.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

@@ -1,0 +1,24 @@
+@import "_variables.scss";
+@import "_page-header.scss";
+@import "_main-menu.scss";
+@import "_poster.scss";
+@import "_button.scss";
+@import "_nutrition.scss";
+@import "_process.scss";
+@import "_example.scss";
+@import "_contacts.scss";
+@import "_page-footer.scss";
+@import "_catalog.scss";
+@import "_product-card.scss";
+@import "_additional-goods.scss";
+@import "_special-offer.scss";
+@import "_form.scss";
+@import "_user-data.scss";
+@import "_diet.scss";
+@import "_contacts.scss";
+@import "_extra-options.scss";
+@import "_btn-block.scss";
+
+body {
+    background-color: $main-color;
+}
