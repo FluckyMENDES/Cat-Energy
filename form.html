@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,13 +35,13 @@
                     Заполните анкету и мы подберем программу питания для вашего кота
                 </p>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                    <div class="form__data data">
-                        <label class="data__label-name" for="name-field">Имя:</label>
-                        <input class="data__input-name" type="text" name="name" id="name-field" placeholder="Барсик">
-                        <label class="data__label-weight" for="weight-field">Вес (кг):*</label>
-                        <input class="data__input-weight" type="number" name="wieght" id="weight-field" placeholder="7">
-                        <label class="data__label-age" for="age-field">Возраст (лет)</label>
-                        <input class="data__input-age" type="number" name="age" id="age-field" placeholder="7">
+                    <div class="form__data user-data">
+                        <label class="user-data__label-name" for="name-field">Имя:</label>
+                        <input class="user-data__input-name" type="text" name="name" id="name-field" placeholder="Барсик">
+                        <label class="user-data__label-weight" for="weight-field">Вес (кг):*</label>
+                        <input class="user-data__input-weight" type="number" name="wieght" id="weight-field" placeholder="7">
+                        <label class="user-data__label-age" for="age-field">Возраст (лет)</label>
+                        <input class="user-data__input-age" type="number" name="age" id="age-field" placeholder="7">
                     </div>
                     <div class="form__type-of-diet diet">
                         <input class="diet__radio-fit" type="radio" name="type-of-diet" id="fit-field" value="weight-reducing" checked>
@@ -73,7 +74,7 @@
                         <label class="extra-options__label-vitamins" for="vitamins-field">Витамины</label>
                     </div>
                     <div class="form__btn btn-block">
-                        <button class="btn-block__button" type="submit">Отправить заявку</button>
+                        <button class="btn-block__button button" type="submit">Отправить заявку</button>
                         <p class="btn-block__description">* &#x2012; Обязательные поля</p>
                     </div>
                 </form>

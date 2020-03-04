@@ -1,3 +1,8 @@
+body {
+    font-family: 'Oswald', 'Tahoma', sans-serif;
+}
+
+@import "_normalize.scss";
 @import "_variables.scss";
 @import "_page-header.scss";
 @import "_main-menu.scss";
@@ -6,6 +11,7 @@
 @import "_nutrition.scss";
 @import "_process.scss";
 @import "_example.scss";
+@import "_cat-slider.scss";
 @import "_contacts.scss";
 @import "_page-footer.scss";
 @import "_catalog.scss";
@@ -18,7 +24,3 @@
 @import "_contacts.scss";
 @import "_extra-options.scss";
 @import "_btn-block.scss";
-
-body {
-    background-color: $main-color;
-}

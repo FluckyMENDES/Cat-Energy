@@ -1,0 +1,77 @@
+.process {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.process__inner {
+    min-width: 321px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.process__heading {
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.process__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.process__item {
+    position: relative;
+    width: 45%;
+    min-height: 300px;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+.process__image {
+    width: 80px;
+    height: 80px;
+    background-color: $secondary-color;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &--leaf {
+        background-image: url("../img/advantage-1.png");
+    }
+
+    &--water {
+        background-image: url("../img/advantage-2.png");
+    }
+
+    &--cutlery {
+        background-image: url("../img/advantage-3.png");
+    }
+
+    &--scale {
+        background-image: url("../img/advantage-4.png");
+    }
+}
+
+.process__description {
+    width: 100%;
+    max-width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $font-color;
+}
+
+.process__index {
+    position: absolute;
+    top: -60px;
+    right: 7vw;
+    font-size: 35vw;
+    opacity: 0.05;
+}

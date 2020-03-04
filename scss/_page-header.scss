@@ -1,0 +1,25 @@
+.page-header {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.page-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 4%;
+}
+
+.page-header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @media (max-width: 768px) {
+//     .page-header__inner {
+//         display: block;
+//     }
+// }

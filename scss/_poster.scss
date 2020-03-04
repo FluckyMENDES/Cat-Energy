@@ -1,0 +1,44 @@
+.poster {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.poster__inner {
+    min-width: 321px;
+    max-width: 1200px;
+    margin: 0 12.5%;
+    text-align: center;
+}
+
+.poster__heading {
+    margin-bottom: 6.5vw;
+    font-size: 10vw;
+    line-height: 8vw;
+    font-weight: normal;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.poster__wrapper {
+    position: relative;
+}
+
+.poster__text {
+    margin-top: 0;
+    margin-bottom: 2.6vw;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.poster_image {
+    text-align: center;
+}
+
+.poster__button {
+    position: absolute;
+    left: 0;
+    top: 10vw;
+}

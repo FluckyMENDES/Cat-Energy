@@ -1,0 +1,28 @@
+.cat-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat-slider__img-before {
+
+}
+
+.cat-slider__toggle {
+    position: relative;
+    align-self: center;
+    
+    &::before{
+        content: "Было";
+        position: absolute;
+        top: 0;
+        left: -50px;
+    }
+
+    &::after {
+        content: "Стало";
+        position: absolute;
+        top: 0;
+        right: -50px;
+    }
+}
