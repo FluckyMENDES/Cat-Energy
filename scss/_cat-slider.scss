@@ -5,18 +5,21 @@
 }
 
 .cat-slider__img-before {
-
+    margin-bottom: 45px;
 }
 
 .cat-slider__toggle {
     position: relative;
     align-self: center;
+    vertical-align: middle;
     
     &::before{
         content: "Было";
         position: absolute;
         top: 0;
         left: -50px;
+        text-transform: uppercase;
+        vertical-align: middle;
     }
 
     &::after {
@@ -24,5 +27,6 @@
         position: absolute;
         top: 0;
         right: -50px;
+        text-transform: uppercase;
     }
 }

@@ -1,48 +1,49 @@
 .example {
-    margin-bottom: 60px;
-    padding-top: 40px;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 40px 20px 50px;
+    background-color: $grey-color;
     box-shadow: 0 -1px 0 0 #e6e6e6;
 }
 
 .example__inner {
-    min-width: 321px;
-    max-width: 768px;
+    max-width: $tablet-width;
+    width: 100%;
     margin: 0 auto;
 }
 
 .example__heading {
     margin: 0;
     padding: 0;
-    margin-bottom: 60px;
-    font-size: 60px;
+    margin-bottom: 30px;
+    font-size: 36px;
     font-weight: normal;
 }
 
 .example__description {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
     color: $font-color;
 }
 
 .example__wrapper {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 50px;
+}
+
+.example__cells {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .example__cell {
     position: relative;
-    display: inline-block;
-    min-width: 160px;
-    min-height: 70px;
-    margin-right: 40px;
+    min-width: 125px;
+    min-height: 55px;
+    // margin-right: 20px;
     margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 70px;
+    font-size: 24px;
+    line-height: 55px;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid #cdcdcd;
@@ -53,31 +54,39 @@
     -o-border-radius: 3px;
 }
 
+.example__cell-value {
+    position: relative;
+    bottom: 5px;
+}
+
 .example__label {
     position: absolute;
     display: block;
     padding-left: 8px;
     padding-right: 8px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 12px;
     color: $font-color;
-    background: white;
+    background: $grey-color;
     text-transform: lowercase;
-    white-space: nowrap;
-    bottom: -7px;
+    white-space: wrap;
+    //bottom: -7px;
     left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .example__costs {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 20px;
     text-transform: uppercase;
-    text-align: right;
+    text-align: center;
 }
 
+.example__cat-slider {
+
+}

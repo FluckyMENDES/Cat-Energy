@@ -1,22 +1,28 @@
 .page-header {
-    margin-top: 25px;
-    margin-bottom: 50px;
+    // margin-top: 25px;
+    // margin-bottom: 50px;
 }
 
 .page-header__inner {
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 320px;
+    max-width: $tablet-width;
     width: 100%;
-    margin: 0 4%;
+    margin: 0 auto;
 }
 
 .page-header__logo {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    // display: block;
+    flex-shrink: 0;
+    padding: 15px 20px 10px;
+    border-bottom: 1px solid #e6e6e6;
 }
+
+
 
 // @media (max-width: 768px) {
 //     .page-header__inner {
