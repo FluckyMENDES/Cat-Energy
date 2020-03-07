@@ -2,12 +2,23 @@
     padding: 40px 20px 50px;
     background-color: $grey-color;
     box-shadow: 0 -1px 0 0 #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 0;
+        background-color: #fff;
+    }
 }
 
 .example__inner {
     max-width: $tablet-width;
     width: 100%;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+        max-width: $desktop-width;
+    }
 }
 
 .example__heading {
@@ -16,6 +27,11 @@
     margin-bottom: 30px;
     font-size: 36px;
     font-weight: normal;
+
+    @media (min-width: $tablet-width) {
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
 }
 
 .example__description {
@@ -24,9 +40,16 @@
     font-size: 14px;
     line-height: 18px;
     color: $font-color;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 50px;
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .example__wrapper {
+    position: relative;
     margin-bottom: 50px;
 }
 
@@ -34,13 +57,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+        justify-content: flex-start;
+    }
 }
 
 .example__cell {
     position: relative;
     min-width: 125px;
     min-height: 55px;
-    // margin-right: 20px;
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 55px;
@@ -52,6 +78,14 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 30px;
+        margin-right: 40px;
+        min-width: 162px;
+        min-height: 72px;
+        line-height: 72px;
+    }
 }
 
 .example__cell-value {
@@ -62,6 +96,7 @@
 .example__label {
     position: absolute;
     display: block;
+    min-width: 60%;
     padding-left: 8px;
     padding-right: 8px;
     font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +105,7 @@
     color: $font-color;
     background: $grey-color;
     text-transform: lowercase;
-    white-space: wrap;
+    // white-space: wrap;
     //bottom: -7px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -78,6 +113,11 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+        font-size: 14px;
+        background-color: #fff;
+    }
 }
 
 .example__costs {
@@ -85,8 +125,19 @@
     line-height: 20px;
     text-transform: uppercase;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        right: 0;
+        top: -10px;
+        width: 100%;
+        max-width: 180px;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: right;
+    }
 }
 
 .example__cat-slider {
-
+    ;
 }

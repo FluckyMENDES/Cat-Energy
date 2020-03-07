@@ -1,5 +1,9 @@
 .poster {
     margin-bottom: 20px;
+
+    @include tablet {
+        margin-bottom: 0;
+    }
 }
 
 .poster__inner {
@@ -7,18 +11,12 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+        
+    }
 }
 
-.poster__heading {
-    margin: 0;
-    margin-bottom: 25px;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: normal;
-    text-align: center;
-    color: #ffffff;
-    overflow-wrap: break-word;
-}
 
 .poster__wrapper-1 {
     width: 100%;
@@ -30,14 +28,32 @@
     background-position: 50% 0%;
     background-repeat: no-repeat;
     background-color: #65a93c;
+    
+    @media (min-width: $tablet-width) {
+        padding-left: 120px;
+        padding-right: 120px;
+        background: none;
+        min-height: auto;
+    }
 }
 
-.poster__wrapper-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+.poster__heading {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    overflow-wrap: break-word;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 40px;
+        color: #000;
+        font-size: 60px;
+        line-height: 60px;
+        text-align: left;
+    }
 }
 
 .poster__text {
@@ -48,13 +64,64 @@
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: left;
+        color: #000;
+    }
 }
+
+.poster__wrapper-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $tablet-width) {
+        min-height: 609px;
+        width: 709px;
+        align-items: flex-start;
+        padding-top: 20px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+
 
 .poster__img {
     margin-top: -135px;
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        z-index: 1;
+        margin: 0 auto;
+        left: 50%;
+        top: 0;
+        width: 709px;
+        height: 609px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
 }
 
 .poster__button {
-    
+    position: relative;
+    z-index: 2;
+    max-width: 320px;
+
+    @media (min-width: $tablet-width) {
+        max-width: 245px;
+        font-size: 20px;
+        padding: 20px 18px;
+        font-weight: 400;
+    }
 }

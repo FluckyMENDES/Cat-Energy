@@ -3,6 +3,11 @@
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+
+    @include tablet {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .nutrition__inner {
@@ -24,6 +29,11 @@
     padding: 30px 20px 20px;
     margin-bottom: 20px;
     background-color: $grey-color;
+
+    @media (min-width: $tablet-width) {
+        padding: 70px 50px 65px;
+        margin-bottom: 30px;
+    }
 }
 
 .nutrition__heading {
@@ -35,6 +45,11 @@
     font-weight: normal;
     // text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 25px;
+        font-size: 36px;
+    }
 }
 
 .nutrition__description {
@@ -43,17 +58,25 @@
     // max-width: 60%;
     margin: 0;
     padding: 0;
+    padding-bottom: 25px;
     margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: $font-color;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+        max-width: 55%;
+        margin-bottom: 27px;
+        font-size: 16px;
+        line-height: 24px;
+        border: none;
+    }
 }
 
 .nutrition__image-background {
     position: relative;
-    // right: 7%;
-    // top: 50%;
     display: inline-block;
     vertical-align: middle;
     // top: 20px;
@@ -64,15 +87,24 @@
     margin-right: 20px;
     border-radius: 50%;
     background-color: $secondary-color;
-    // -webkit-border-radius: 50%;
-    // -moz-border-radius: 50%;
-    // -ms-border-radius: 50%;
-    // -o-border-radius: 50%;
-    // transform: translateY(-50%);
-    // -webkit-transform: translateY(-50%);
-    // -moz-transform: translateY(-50%);
-    // -ms-transform: translateY(-50%);
-    // -o-transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        width: 200px;
+        height: 200px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
 }
 
 .nutrition__image {
@@ -82,6 +114,11 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $tablet-width) {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .nutrition__image--weight-reduce {
@@ -92,6 +129,10 @@
     -moz-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
+
+    @include tablet {
+        bottom: 10px;
+    }
 }
 
 .nutrition__image--mass-increase {
@@ -100,6 +141,13 @@
     left: -10px;
     top: -10px;
     background-image: url("../img/icon-cat-pro.svg");
+
+    @media (min-width: $tablet-width) {
+        left: -33px;
+        top: -29px;
+        width: 265px;
+        height: 265px;
+    }
 }
 
 .nutrition__link {
@@ -110,11 +158,9 @@
     color: #000;
     background: url("../img/right-arrow.svg") 100% 50% no-repeat;
     background-size: 25px;
-}
 
-.nutrition hr {
-    background-color: #d9d9d9;
-    height: 1px;
-    border: none;
-    margin-bottom: 15px;
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        padding-right: 50px;
+    }
 }

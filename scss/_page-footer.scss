@@ -1,19 +1,33 @@
 .page-footer {
     padding: 30px 20px;
     background-color: $grey-color;
+
+    @include tablet {
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .page-footer__inner {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // align-items: center;
     margin: 0 auto;
+    
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .page-footer__inner > div:not(:last-child) {
     // background: greenyellow;
     border-bottom: 1px solid #d9d9d9;
+
+    @include tablet {
+        border: none;
+    }
 }
 
 .page-footer__logo {
@@ -21,6 +35,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet {
+        padding-bottom: 0;
+    }
 }
 
 .page-footer__logo img {
@@ -51,6 +69,10 @@
 
 .page-footer__item:not(:last-child) {
     margin-right: 40px;
+
+    @include tablet { 
+        margin-right: 30px;
+    }
 }
 
 .page-footer__link {
@@ -64,18 +86,33 @@
     width: 22px;
     height: 12px;
     background-image: url("../img/icon-vk.svg");
+
+    @include tablet {
+        width: 30px;
+        height: 16px;
+    }
 }
 
 .page-footer__link--ig {
     width: 16px;
     height: 16px;
     background-image: url("../img/icon-ig.svg");
+
+    @include tablet {
+        width: 23px;
+        height: 23px;
+    }
 }
 
 .page-footer__link--fb {
     width: 10px;
     height: 19px;
     background-image: url("../img/icon-fb.svg");
+
+    @include tablet {
+        width: 14px;
+        height: 28px;
+    }
 }
 
 .page-footer__developer-wrapper {
@@ -83,6 +120,10 @@
     // padding-bottom: 20px;
     display: flex;
     justify-content: center;
+
+    @include tablet {
+        padding: 0;
+    }
 }
 
 .page-footer__developer-link {
