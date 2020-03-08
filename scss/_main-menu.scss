@@ -43,11 +43,19 @@
         font-weight: 400;
         border: none;
     }
+
+    @include desktop {
+        color: #fff;
+    }
 }
 
-@media (min-width: $tablet-width) {
-    .main-menu__link--active {
-        // box-shadow: 0 2px 0 0 $secondary-color;
+
+.main-menu__link--active {
+    @include tablet {
         border-bottom: 2px solid $secondary-color;
+    }
+
+    @include desktop {
+        border-color: #fff;
     }
 }

@@ -7,14 +7,15 @@
 }
 
 .page-header__inner {
-    // display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     max-width: $tablet-width;
     width: 100%;
     padding: 15px 0 10px;
-    
     margin: 0 auto;
+
+    
 
     @media (min-width: $tablet-width) {
         display: flex;
@@ -22,7 +23,18 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    @include desktop {
+        padding-top: 50px;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    @include desktop {
+        
+    }
 }
+
 
 .page-header__logo {
     display: flex;
@@ -44,5 +56,22 @@
 
     @media (min-width: $tablet-width) {
         @include visually-hidden;
+    }
+}
+
+
+@include desktop {
+    .page-header__wrapper-index::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: calc(50% + 40px);
+        z-index: -1;
+        height: 696px;
+        background: url("../img/index-background-desktop.jpg") 50% 50% no-repeat;
+        background-color: #64a83b;
+        background-size: cover;
     }
 }

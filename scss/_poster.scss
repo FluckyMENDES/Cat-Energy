@@ -4,16 +4,21 @@
     @include tablet {
         margin-bottom: 0;
     }
+
+    @include desktop {
+        margin-bottom: 80px;
+    }
 }
 
 .poster__inner {
     max-width: $tablet-width;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
 
-    @media (min-width: $tablet-width) {
-        
+    @include desktop {
+        max-width: $desktop-width;
+        padding-left: 110px;
+        padding-right: 110px;
     }
 }
 
@@ -23,7 +28,6 @@
     min-height: 305px;
     padding-top: 30px;
     padding-left: 20px;
-    padding-right: 20px;
     background-image: url("../img/index-background-mobile.jpg");
     background-position: 50% 0%;
     background-repeat: no-repeat;
@@ -31,9 +35,13 @@
     
     @media (min-width: $tablet-width) {
         padding-left: 120px;
-        padding-right: 120px;
         background: none;
         min-height: auto;
+    }
+
+    @include desktop {
+        padding-top: 40px;
+        padding-left: 40px;
     }
 }
 
@@ -53,6 +61,10 @@
         font-size: 60px;
         line-height: 60px;
         text-align: left;
+    }
+
+    @include desktop {
+        max-width: 50%;
     }
 }
 
@@ -79,15 +91,20 @@
     flex-direction: column;
     align-items: center;
     padding-left: 20px;
-    padding-right: 20px;
+    // padding-right: 20px;
 
     @media (min-width: $tablet-width) {
         min-height: 609px;
-        width: 709px;
+        max-width: 709px;
         align-items: flex-start;
         padding-top: 20px;
         padding-left: 120px;
-        padding-right: 120px;
+    }
+    
+    @include desktop {
+        padding-left: 40px;
+        max-width: $desktop-width;
+        min-height: 285px;
     }
 }
 
@@ -110,6 +127,17 @@
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
+    }
+
+    @include desktop {
+        top: -90%;
+        width: 552px;
+        height: 499px;
+        transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+        -moz-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+        -o-transform: translateX(-25%);
 }
 }
 

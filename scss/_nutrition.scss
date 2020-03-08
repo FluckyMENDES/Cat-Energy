@@ -8,12 +8,21 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    @include desktop {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .nutrition__inner {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
+    
+    @include desktop {
+        max-width: $desktop-width;
+    }
 }
 
 .nutrition__list {
@@ -21,6 +30,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @include desktop {
+        display: flex;
+    }
 }
 
 .nutrition__card {
@@ -33,6 +46,13 @@
     @media (min-width: $tablet-width) {
         padding: 70px 50px 65px;
         margin-bottom: 30px;
+    }
+}
+
+.nutrition__item:not(:last-child) {
+
+    @include desktop {
+        margin-right: 80px;
     }
 }
 
@@ -49,6 +69,10 @@
     @media (min-width: $tablet-width) {
         margin-bottom: 25px;
         font-size: 36px;
+    }
+
+    @include desktop {
+        
     }
 }
 
@@ -73,6 +97,10 @@
         line-height: 24px;
         border: none;
     }
+
+    @include desktop {
+        max-width: 100%;
+    }
 }
 
 .nutrition__image-background {
@@ -93,7 +121,7 @@
     -o-border-radius: 50%;
     
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         position: absolute;
         right: 40px;
         top: 50%;
@@ -105,6 +133,13 @@
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
     }
+
+    @include desktop {
+        width: 100px;
+        height: 100px;
+        margin-right: 50px;
+        margin-bottom: 40px;
+    }
 }
 
 .nutrition__image {
@@ -115,9 +150,14 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         width: 200px;
         height: 200px;
+    }
+
+    @include desktop {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -142,11 +182,16 @@
     top: -10px;
     background-image: url("../img/icon-cat-pro.svg");
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         left: -33px;
         top: -29px;
         width: 265px;
         height: 265px;
+    }
+
+    @include desktop {
+        width: 130px;
+        height: 130px;
     }
 }
 
