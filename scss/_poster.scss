@@ -11,14 +11,14 @@
 }
 
 .poster__inner {
-    max-width: $tablet-width;
+    max-width: $tablet-width-content;
     width: 100%;
     margin: 0 auto;
 
     @include desktop {
-        max-width: $desktop-width;
-        padding-left: 110px;
-        padding-right: 110px;
+        max-width: $desktop-width-content;
+        // padding-left: 110px;
+        // padding-right: 110px;
     }
 }
 
@@ -34,14 +34,14 @@
     background-color: #65a93c;
     
     @media (min-width: $tablet-width) {
-        padding-left: 120px;
+        padding-left: 90px;
         background: none;
         min-height: auto;
     }
 
     @include desktop {
         padding-top: 40px;
-        padding-left: 40px;
+        padding-left: 80px;
     }
 }
 
@@ -64,7 +64,7 @@
     }
 
     @include desktop {
-        max-width: 50%;
+        max-width: 40%;
     }
 }
 
@@ -91,19 +91,19 @@
     flex-direction: column;
     align-items: center;
     padding-left: 20px;
-    // padding-right: 20px;
+    padding-right: 20px;
 
     @media (min-width: $tablet-width) {
         min-height: 609px;
         max-width: 709px;
         align-items: flex-start;
         padding-top: 20px;
-        padding-left: 120px;
+        padding-left: 90px;
     }
     
     @include desktop {
-        padding-left: 40px;
-        max-width: $desktop-width;
+        padding-left: 80px;
+        max-width: $desktop-width-content;
         min-height: 285px;
     }
 }

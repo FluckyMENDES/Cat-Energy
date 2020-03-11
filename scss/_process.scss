@@ -12,6 +12,12 @@
         padding-right: 30px;
         max-width: $desktop-width;
     }
+
+    @include desktop {
+        max-width: $desktop-width-content;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .process__heading {
@@ -34,7 +40,12 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+    @include desktop {
+
+    }
 }
+
 
 .process__item {
     position: relative;
@@ -50,8 +61,16 @@
             &:nth-child(2n) {
             margin-right: 0;
         }
+    }
 
+    @include desktop {
+        width: 23%;
+        margin-right: 0;
+        margin-left: 25px;
 
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }
 
@@ -112,5 +131,9 @@
         right: 90px;
         font-size: 281px;
         opacity: 0.05;
+    }
+
+    @include desktop {
+        right: 0;
     }
 }

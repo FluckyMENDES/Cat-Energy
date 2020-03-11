@@ -19,15 +19,15 @@
 
     @media (min-width: $tablet-width) {
         display: flex;
-        max-width: $desktop-width;
+        max-width: $desktop-width-content;
         padding-left: 30px;
         padding-right: 30px;
     }
 
     @include desktop {
         padding-top: 50px;
-        padding-left: 110px;
-        padding-right: 110px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     @include desktop {

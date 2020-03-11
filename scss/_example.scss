@@ -1,13 +1,19 @@
 .example {
     padding: 40px 20px 50px;
     background-color: $grey-color;
-    box-shadow: 0 -1px 0 0 #e6e6e6;
-
+    
     @media (min-width: $tablet-width) {
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 0;
         background-color: #fff;
+        box-shadow: 0 -1px 0 0 #e6e6e6;
+    }
+
+    @include desktop {
+        padding-left: 40px;
+        padding-right: 40px;
+        box-shadow: none;
     }
 }
 
@@ -18,6 +24,13 @@
 
     @media (min-width: $tablet-width) {
         max-width: $desktop-width;
+    }
+
+    @include desktop {
+        max-width: $desktop-width-content;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
     }
 }
 
@@ -139,5 +152,5 @@
 }
 
 .example__cat-slider {
-    ;
+    
 }
